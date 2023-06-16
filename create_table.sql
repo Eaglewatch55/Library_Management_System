@@ -1,5 +1,7 @@
+-- SQLITE
+
 CREATE TABLE book (
-    id INTEGER PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     isbn TEXT NOT NULL,
     book_name TEXT NOT NULL,
     genre TEXT NOT NULL,
@@ -11,21 +13,21 @@ CREATE TABLE book (
 );
 
 CREATE TABLE student (
-    id INTEGER PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     full_name TEXT NOT NULL,
     gender TEXT NOT NULL,
     date_of_birth TEXT NOT NULL
 );
 
 CREATE TABLE staff (
-    id INTEGER PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     full_name TEXT NOT NULL,
     gender TEXT NOT NULL,
     date_of_birth TEXT NOT NULL
 );
 
 CREATE TABLE operation (
-    id INTEGER PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     student_id INTEGER NOT NULL,
     staff_id INTEGER NOT NULL,
     book_id INTEGER NOT NULL,
