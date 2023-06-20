@@ -1,5 +1,13 @@
 -- SQLITE
 
+/*
+-- To update tables
+DROP TABLE book;
+DROP TABLE student;
+DROP TABLE staff;
+DROP TABLE operation;
+*/
+
 CREATE TABLE book (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     isbn TEXT NOT NULL,
